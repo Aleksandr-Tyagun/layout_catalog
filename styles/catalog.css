@@ -1,0 +1,15 @@
+.catalog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  width: calc(100% - 80px);
+  margin-top: 50px; }
+
+/*# sourceMappingURL=catalog.css.map */

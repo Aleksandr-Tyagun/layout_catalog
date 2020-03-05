@@ -95,7 +95,7 @@ $card-width: 200px;
     font-size: 14px;
     color: white;
     text-decoration: none;
-    transition: 500ms;
+    transition: color 500ms, background-color 500ms;
 
     &:hover {
       border: 1px solid #00acdc;

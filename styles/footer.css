@@ -1,0 +1,21 @@
+.footer {
+  -webkit-box-shadow: 0 -1px #e1e7ed;
+          box-shadow: 0 -1px #e1e7ed;
+  margin-top: 88px; }
+  .footer__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 901px;
+    margin: 0 auto;
+    padding-top: 44px;
+    margin-bottom: 43px; }
+  .footer__title {
+    margin: 0; }
+  .footer__list {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0; }
+  .footer__item {
+    margin-top: 9px; }
+
+/*# sourceMappingURL=footer.css.map */

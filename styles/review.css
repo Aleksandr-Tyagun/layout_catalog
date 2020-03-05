@@ -1,0 +1,21 @@
+.review__user-info {
+  margin-top: 34px;
+  display: grid;
+  grid-template-columns: 75px 150px;
+  grid-template-rows: auto;
+  grid-template-areas: "image name" "image date"; }
+
+.review__user-photo {
+  display: inline-block;
+  grid-area: image; }
+
+.review__user-name {
+  grid-area: name;
+  font-family: "Avenir Heavy", sans-serif;
+  font-size: 20px; }
+
+.review__post-date {
+  grid-area: date;
+  font-size: 14px; }
+
+/*# sourceMappingURL=review.css.map */

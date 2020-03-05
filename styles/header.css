@@ -2,16 +2,24 @@
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1fr 8fr;
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 0 2px 1px #e1e7ed;
+          box-shadow: 0 2px 1px #e1e7ed;
   margin: 0;
   height: 60px;
-  padding: 0 50px; }
-  .header__img {
-    width: 40px;
-    height: 40px;
-    margin: 10px 0; }
+  padding: 0 26px; }
   .header__logo {
-    display: inline-block; }
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/airbnb-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    margin: 15px 0; }
+  .header__profile-photo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 15px 0; }
 
 /*# sourceMappingURL=header.css.map */

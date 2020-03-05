@@ -1,347 +1,157 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Moyo header</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AirBnB</title>
   <link rel="stylesheet" href="./styles/main.css">
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap&subset=cyrillic"
-    rel="stylesheet">
 </head>
 
 <body>
   <header class="header">
-    <a href="header__logo">
-      <img class="header__img" src="images/logo.png" alt="logo">
+    <a class="header__logo-link" href="#">
+      <div class="header__logo"></div>
     </a>
     <nav class="nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link is-active" href="#">
-            Apple
+          <a class="nav__link" href="#">
+            Become a host
           </a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#">
-            Samsung
+            Trips
           </a>
         </li>
         <li class="nav__item">
           <a class="nav__link" href="#">
-            Смартфоны и телефоны
+            Messages
           </a>
         </li>
         <li class="nav__item">
           <a class="nav__link" data-qa="nav-hover" href="#">
-            Ноутбуки и компьютеры
-          </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">
-            Гаджеты
-          </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">
-            Планшеты
-          </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">
-            Фото
-          </a>
-        </li>
-        <li class="nav__item">
-          <a class="nav__link" href="#">
-            Видео
+            <img class="nav__profile-photo" src="./images/headshot.png" alt="Profile photo">
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <h1 class="visuallyhidden">
-    Компьютеры iMac
-  </h1>
-  <div class="catalog__container">
-    <main class="catalog">
-      <article class="card" data-qa="card">
-        <div class="card__image-container">
-          <img class="card__image" src="./images/imac.jpeg" alt="iMac photo">
-        </div>
-        <div class="card__title">
-          <h2 class="card__title-text">
-            Моноблок APPLE A1419 iMac 27" Retina 5K (MNED2UA/A)
-          </h2>
-        </div>
-        <div class="card__sku">
-          Код товара: 195434
-        </div>
-        <div class="card__review">
-          <div class="rate stars--4">
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
+  <main class="main">
+    <img class="main__big-image" src="./images/picture1.png" alt="House Hall photo">
+    <div class="main__container">
+      <div class="main__content">
+        <article>
+          <h1 class="main__title">Quiet apartment</h1>
+          <section>
+            <p class="main__detail-info">
+              <span class="main__detail-title">Entire apartment</span>
+              <ul class="main__detail-list">
+                <li class="main__detail-item">4 guests</li>
+                <li class="main__detail-item">1 bed</li>
+                <li class="main__detail-item">1 bath</li>
+              </ul>
+            </p>
+            <div class="main__description">
+              City Apartment is newly renovated in the heart of Budapest, right in the city center. Lorem ipsum dolor
+              sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim
+              ad minim veniam.
+            </div>
+            <a class="main__contact-link" href="#">Contact host</a>
+            <p class="main__amenities">
+              <span class="main__amenities-title">Amenities</span>
+              <ul class="main__amenities-list">
+                <li class="main__amenities-item">Elevator</li>
+                <li class="main__amenities-item">Hair dryer</li>
+                <li class="main__amenities-item">Washer</li>
+                <li class="main__amenities-item">Kitchen</li>
+              </ul>
+              <span class="main__amenities-show-all">
+                Show All Amenities
+              </span>
+            </p>
+          </section>
+          <section class="main__reviews">
+            <h2 class="main__reviews-title">Reviews</h2>
+            <article class="review">
+              <div class="review__user-info">
+                <img class="review__user-photo" src="./images/user.png" alt="user photo">
+                <span class="review__user-name">John</span>
+                <time class="review__post-date" datetime="2016-07-01T11:21:00+02:00">September 2016</time>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam.
+              </p>
+            </article>
+            <article class="review">
+              <div class="review__user-info">
+                <img class="review__user-photo" src="./images/user.png" alt="user photo">
+                <span class="review__user-name">John</span>
+                <time class="review__post-date" datetime="2016-07-01T11:21:00+02:00">September 2016</time>
+              </div>
+              <p>
+                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </p>
+            </article>
+          </section>
+          <section class="main__host">
+            <h2 class="main__host-name">Hosted by Jane</h2>
+            <span class="main__host-location">Budapest, Hungary</span>
+            <p class="main__host-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+              magna
+              aliqua.</p>
+            <a class="main__host-button" href="#">Contact Host</a>
+          </section>
+        </article>
+      </div>
+      <aside class="main__sidedar">
+        <form class="main__form" action="">
+          <div class="main__form-container">
+            <label class="main__form-title">25$ per night</label>
+            <label>
+              <input class="main__form-input" type="text" name="date" id="" placeholder="Date">
+            </label>
+            <label>
+              <input class="main__form-input" type="text" name="guest" id="" placeholder="Guest">
+            </label>
+            <a class="main__form-button" href="#">Book</a>
           </div>
-          <div class="card__review-count">
-            Отзывов: 5
-          </div>
-        </div>
-        <p class="card__price-area">
-          <span class="card__price-tag">
-            Цена:
-          </span>
-          <span class="card__price">
-            69 999 грн
-          </span>
-        </p>
-        <a class="card__button" data-qa="card-hover" href="#">Купить</a>
-      </article>
-      <article class="card">
-        <div class="card__image-container">
-          <img class="card__image" src="./images/imac.jpeg" alt="iMac photo">
-        </div>
-        <div class="card__title">
-          <h2 class="card__title-text">
-            Моноблок APPLE A1419 iMac 27" Retina 5K (MNED2UA/A)
-          </h2>
-        </div>
-        <div class="card__sku">
-          Код товара: 195434
-        </div>
-        <div class="card__review">
-          <div class="rate stars--4">
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-          </div>
-          <div class="card__review-count">
-            Отзывов: 5
-          </div>
-        </div>
-        <p class="card__price-area">
-          <span class="card__price-tag">
-            Цена:
-          </span>
-          <span class="card__price">
-            69 999 грн
-          </span>
-        </p>
-        <a class="card__button" href="#">Купить</a>
-      </article>
-      <article class="card">
-        <div class="card__image-container">
-          <img class="card__image" src="./images/imac.jpeg" alt="iMac photo">
-        </div>
-        <div class="card__title">
-          <h2 class="card__title-text">
-            Моноблок APPLE A1419 iMac 27" Retina 5K (MNED2UA/A)
-          </h2>
-        </div>
-        <div class="card__sku">
-          Код товара: 195434
-        </div>
-        <div class="card__review">
-          <div class="rate stars--4">
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-          </div>
-          <div class="card__review-count">
-            Отзывов: 5
-          </div>
-        </div>
-        <p class="card__price-area">
-          <span class="card__price-tag">
-            Цена:
-          </span>
-          <span class="card__price">
-            69 999 грн
-          </span>
-        </p>
-        <a class="card__button" href="#">Купить</a>
-      </article>
-      <article class="card">
-        <div class="card__image-container">
-          <img class="card__image" src="./images/imac.jpeg" alt="iMac photo">
-        </div>
-        <div class="card__title">
-          <h2 class="card__title-text">
-            Моноблок APPLE A1419 iMac 27" Retina 5K (MNED2UA/A)
-          </h2>
-        </div>
-        <div class="card__sku">
-          Код товара: 195434
-        </div>
-        <div class="card__review">
-          <div class="rate stars--4">
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-          </div>
-          <div class="card__review-count">
-            Отзывов: 5
-          </div>
-        </div>
-        <p class="card__price-area">
-          <span class="card__price-tag">
-            Цена:
-          </span>
-          <span class="card__price">
-            69 999 грн
-          </span>
-        </p>
-        <a class="card__button" href="#">Купить</a>
-      </article>
-      <article class="card">
-        <div class="card__image-container">
-          <img class="card__image" src="./images/imac.jpeg" alt="iMac photo">
-        </div>
-        <div class="card__title">
-          <h2 class="card__title-text">
-            Моноблок APPLE A1419 iMac 27" Retina 5K (MNED2UA/A)
-          </h2>
-        </div>
-        <div class="card__sku">
-          Код товара: 195434
-        </div>
-        <div class="card__review">
-          <div class="rate stars--4">
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-          </div>
-          <div class="card__review-count">
-            Отзывов: 5
-          </div>
-        </div>
-        <p class="card__price-area">
-          <span class="card__price-tag">
-            Цена:
-          </span>
-          <span class="card__price">
-            69 999 грн
-          </span>
-        </p>
-        <a class="card__button" href="#">Купить</a>
-      </article>
-      <article class="card">
-        <div class="card__image-container">
-          <img class="card__image" src="./images/imac.jpeg" alt="iMac photo">
-        </div>
-        <div class="card__title">
-          <h2 class="card__title-text">
-            Моноблок APPLE A1419 iMac 27" Retina 5K (MNED2UA/A)
-          </h2>
-        </div>
-        <div class="card__sku">
-          Код товара: 195434
-        </div>
-        <div class="card__review">
-          <div class="rate stars--4">
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-          </div>
-          <div class="card__review-count">
-            Отзывов: 5
-          </div>
-        </div>
-        <p class="card__price-area">
-          <span class="card__price-tag">
-            Цена:
-          </span>
-          <span class="card__price">
-            69 999 грн
-          </span>
-        </p>
-        <a class="card__button" href="#">Купить</a>
-      </article>
-      <article class="card">
-        <div class="card__image-container">
-          <img class="card__image" src="./images/imac.jpeg" alt="iMac photo">
-        </div>
-        <div class="card__title">
-          <h2 class="card__title-text">
-            Моноблок APPLE A1419 iMac 27" Retina 5K (MNED2UA/A)
-          </h2>
-        </div>
-        <div class="card__sku">
-          Код товара: 195434
-        </div>
-        <div class="card__review">
-          <div class="rate stars--4">
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-          </div>
-          <div class="card__review-count">
-            Отзывов: 5
-          </div>
-        </div>
-        <p class="card__price-area">
-          <span class="card__price-tag">
-            Цена:
-          </span>
-          <span class="card__price">
-            69 999 грн
-          </span>
-        </p>
-        <a class="card__button" href="#">Купить</a>
-      </article>
-      <article class="card">
-        <div class="card__image-container">
-          <img class="card__image" src="./images/imac.jpeg" alt="iMac photo">
-        </div>
-        <div class="card__title">
-          <h2 class="card__title-text">
-            Моноблок APPLE A1419 iMac 27" Retina 5K (MNED2UA/A)
-          </h2>
-        </div>
-        <div class="card__sku">
-          Код товара: 195434
-        </div>
-        <div class="card__review">
-          <div class="rate stars--4">
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-            <span class="rate__star"></span>
-          </div>
-          <div class="card__review-count">
-            Отзывов: 5
-          </div>
-        </div>
-        <p class="card__price-area">
-          <span class="card__price-tag">
-            Цена:
-          </span>
-          <span class="card__price">
-            69 999 грн
-          </span>
-        </p>
-        <a class="card__button" href="#">Купить</a>
-      </article>
-    </main>
-  </div>
+        </form>
+      </aside>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__row">
+        <h3 class="footer__title">Airbnb</h3>
+        <ul class="footer__list">
+          <li class="footer__item">About</li>
+          <li class="footer__item">Press</li>
+          <li class="footer__item">Help</li>
+        </ul>
+      </div>
+      <div class="footer__row">
+        <h3 class="footer__title">Discover</h3>
+        <ul class="footer__list">
+          <li class="footer__item">Travel credit</li>
+          <li class="footer__item">Business</li>
+          <li class="footer__item">Guidebooks</li>
+        </ul>
+      </div>
+      <div class="footer__row">
+        <h3 class="footer__title">Hosting</h3>
+        <ul class="footer__list">
+          <li class="footer__item">Why host</li>
+          <li class="footer__item">Hospitality</li>
+          <li class="footer__item">Community</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
-
 </html>

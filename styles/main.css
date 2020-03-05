@@ -167,8 +167,8 @@
     font-style: normal;
     line-height: 60px;
     text-transform: uppercase;
-    -webkit-transition: 500ms;
-    transition: 500ms; }
+    -webkit-transition: color 500ms;
+    transition: color 500ms; }
   .nav__link:hover {
     color: #00acdc; }
 

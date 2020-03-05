@@ -16,7 +16,7 @@ $card-width: 200px;
     margin-right: auto;
     width: 160px;
     height: 134px;
-    transition: 1s;
+    transition: transform 1s;
 
     &:hover {
       transform: scale(1.2);
@@ -29,6 +29,7 @@ $card-width: 200px;
     border-radius: 5px;
     margin: -15px;
     padding-bottom: 20px;
+    transition: border 0s;
 
     &:hover {
       border: 3px solid #f3f3f3;

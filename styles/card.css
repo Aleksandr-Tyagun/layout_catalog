@@ -7,12 +7,27 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
   .card__image {
+    display: block;
     margin-top: 16px;
-    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
     width: 160px;
-    height: 134px; }
+    height: 134px;
+    -webkit-transition: 1s;
+    transition: 1s; }
+    .card__image:hover {
+      -webkit-transform: scale(1.2);
+              transform: scale(1.2); }
+  .card__image-container {
+    justify-self: stretch;
+    border: 3px solid transparent;
+    border-radius: 5px;
+    margin: -15px;
+    padding-bottom: 20px; }
+    .card__image-container:hover {
+      border: 3px solid #f3f3f3; }
   .card__title {
-    margin-top: 45px; }
+    margin-top: 25px; }
   .card__title-text {
     margin: 0;
     font-weight: 500;
@@ -65,7 +80,9 @@
     font-weight: bold;
     font-size: 14px;
     color: white;
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: 500ms;
+    transition: 500ms; }
     .card__button:hover {
       border: 1px solid #00acdc;
       -webkit-box-sizing: border-box;

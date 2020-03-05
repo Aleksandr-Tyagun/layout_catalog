@@ -111,8 +111,8 @@
     font-size: 14px;
     color: white;
     text-decoration: none;
-    -webkit-transition: 500ms;
-    transition: 500ms; }
+    -webkit-transition: color 500ms, background-color 500ms;
+    transition: color 500ms, background-color 500ms; }
     .card__button:hover {
       border: 1px solid #00acdc;
       -webkit-box-sizing: border-box;

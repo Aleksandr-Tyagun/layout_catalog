@@ -1,21 +1,26 @@
 .review__user-info {
   margin-top: 34px;
-  display: grid;
-  grid-template-columns: 75px 150px;
-  grid-template-rows: auto;
-  grid-template-areas: "image name" "image date"; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+
+.review__name-date-container {
+  padding-left: 21px; }
 
 .review__user-photo {
-  display: inline-block;
-  grid-area: image; }
+  width: 50px;
+  height: 50px; }
 
 .review__user-name {
-  grid-area: name;
-  font-family: "Avenir Heavy", sans-serif;
+  font-family: Avenir, sans-serif;
+  font-weight: 900;
+  display: block;
   font-size: 20px; }
 
 .review__post-date {
-  grid-area: date;
+  display: block;
   font-size: 14px; }
 
 /*# sourceMappingURL=review.css.map */

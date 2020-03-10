@@ -1,28 +1,53 @@
 .nav {
   justify-self: end; }
+  @media screen and (max-width: 480px) {
+    .nav {
+      justify-self: center; } }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     list-style: none;
     padding: 0;
     margin: 0; }
+    @media screen and (max-width: 480px) {
+      .nav__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: stretch;
+            -ms-flex-align: stretch;
+                align-items: stretch; } }
   .nav__item {
     display: inline-block;
     margin-left: 30px;
     line-height: 60px; }
-  .nav__item:first-child {
-    margin-left: 0; }
+    @media screen and (max-width: 480px) {
+      .nav__item {
+        margin-left: 0; } }
   .nav__link {
+    font-family: Avenir, sans-serif;
+    font-weight: 900;
     display: inline-block;
     text-decoration: none;
-    color: #3d4e61;
-    font-family: "Avenir Heavy", sans-serif;
     font-size: 15px;
     line-height: 60px; }
+    .nav__link:focus {
+      outline-color: #575757; }
+    .nav__link:visited {
+      color: #3d4e61; }
+    .nav__link:hover {
+      color: #ed5c63; }
   .nav__profile-photo {
     display: inline-block;
     width: 30px;
